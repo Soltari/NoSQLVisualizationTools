@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NoSQL_Schema:NoSQLSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:NoSQL_Schema="http://www.modelum.es/nosql_schema" name="Movies">
+  <entities name="Actor">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Birthday">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Birthday">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Nationality">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasAwards" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Birthday">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Nationality">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Debut_year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasAwards" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="4">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Birthday">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Nationality">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Debut_year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Website">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasAwards" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+    </entityversions>
+  </entities>
+  <entities name="Award">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Institution">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Director">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Oscars">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Age">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasAwards" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+    </entityversions>
+  </entities>
+  <entities name="Movie">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Director">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Rating">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Float"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Genre">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Rating">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Float"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Genre">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Oscars">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasDirector" lowerBound="1" upperBound="1" refTo="Director"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasProducers" lowerBound="1" upperBound="-1" refTo="Producer"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasActors" upperBound="-1" refTo="Actor"/>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Genre">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Awards">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasDirector" lowerBound="1" upperBound="1" refTo="Director"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasProducers" lowerBound="1" upperBound="-1" refTo="Producer"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasActors" upperBound="-1" refTo="Actor"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasRating" lowerBound="1" upperBound="1" refTo="Rating"/>
+    </entityversions>
+    <entityversions versionId="4">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Genre">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Awards">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasDirector" lowerBound="1" upperBound="1" refTo="Director"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasProducers" lowerBound="1" upperBound="-1" refTo="Producer"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasActors" upperBound="-1" refTo="Actor"/>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasRating" lowerBound="1" upperBound="1" refTo="//@entities.5/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="5">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Genre">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Awards">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasDirector" lowerBound="1" upperBound="1" refTo="Director"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasProducers" lowerBound="1" upperBound="-1" refTo="Producer"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasActors" upperBound="-1" refTo="Actor"/>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasRating" lowerBound="1" upperBound="1" refTo="//@entities.5/@entityversions.1"/>
+    </entityversions>
+    <entityversions versionId="6">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Genre">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasDirector" lowerBound="1" upperBound="1" refTo="Director"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasProducers" lowerBound="1" upperBound="-1" refTo="Producer"/>
+      <properties xsi:type="NoSQL_Schema:Reference" name="hasActors" upperBound="-1" refTo="Actor"/>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasRating" lowerBound="1" upperBound="1" refTo="//@entities.5/@entityversions.1"/>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasAwards" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+    </entityversions>
+  </entities>
+  <entities name="Producer">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Budget">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Float"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasStudio" lowerBound="1" upperBound="-1" refTo="//@entities.6/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Budget_per_year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Float"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Movies_per_year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Aggregate" name="hasStudio" lowerBound="1" upperBound="-1" refTo="//@entities.6/@entityversions.1"/>
+    </entityversions>
+  </entities>
+  <entities name="Rating">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Rating">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Float"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Rating">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Float"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Votes">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Studio">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Location">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Website">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Name">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Location">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Year">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="Int"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Website">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="NoSQL_Schema:Attribute" name="Founder">
+        <type xsi:type="NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+  </entities>
+</NoSQL_Schema:NoSQLSchema>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated NoSQLSchema -->
+      <package
+            uri="http://www.modelum.es/nosql_schema"
+            class="NoSQL_Schema.NoSQL_SchemaPackage"
+            genModel="metamodel/NoSQLSchema.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ExNoSQLSchema -->
+      <package
+            uri="http://www.modelum.es/extended_nosql_schema"
+            class="Extended_NoSQL_Schema.Extended_NoSQL_SchemaPackage"
+            genModel="metamodel/ExNoSQLSchema.genmodel"/>
+   </extension>
+
+</plugin>

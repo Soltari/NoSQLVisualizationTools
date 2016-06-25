@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Extended_NoSQL_Schema:NoSQLDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Extended_NoSQL_Schema="http://www.modelum.es/extended_nosql_schema" name="Art">
+  <schemaVersions root="//@entities.0/@entityversions.1"/>
+  <schemaVersions root="//@entities.4/@entityversions.0"/>
+  <schemaVersions root="//@entities.2/@entityversions.1"/>
+  <schemaVersions root="//@entities.7/@entityversions.0" entityVersions="//@entities.2/@entityversions.2 //@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.0 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.2/@entityversions.4 //@entities.2/@entityversions.3" entities="ArtisticType Piece"/>
+  <schemaVersions root="//@entities.0/@entityversions.0"/>
+  <schemaVersions root="//@entities.3/@entityversions.0" entityVersions="//@entities.2/@entityversions.2 //@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.0 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.2/@entityversions.4 //@entities.2/@entityversions.3" entities="ArtisticType Piece"/>
+  <schemaVersions root="//@entities.2/@entityversions.4" entityVersions="//@entities.1/@entityversions.0"/>
+  <schemaVersions root="//@entities.2/@entityversions.2"/>
+  <schemaVersions root="//@entities.7/@entityversions.3" entityVersions="//@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.3/@entityversions.0 //@entities.0/@entityversions.0 //@entities.3/@entityversions.1 //@entities.6/@entityversions.0 //@entities.2/@entityversions.4 //@entities.2/@entityversions.2 //@entities.1/@entityversions.0 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.8/@entityversions.0 //@entities.5/@entityversions.2 //@entities.2/@entityversions.3" entities="ArtisticType Piece Exposing"/>
+  <schemaVersions root="//@entities.7/@entityversions.1" entityVersions="//@entities.2/@entityversions.2 //@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.0 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.2/@entityversions.4 //@entities.2/@entityversions.3" entities="ArtisticType Piece"/>
+  <schemaVersions root="//@entities.7/@entityversions.2" entityVersions="//@entities.2/@entityversions.2 //@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.0 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.2/@entityversions.4 //@entities.2/@entityversions.3" entities="ArtisticType Piece"/>
+  <schemaVersions root="//@entities.5/@entityversions.0" entityVersions="//@entities.2/@entityversions.2 //@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.1/@entityversions.0 //@entities.3/@entityversions.0 //@entities.0/@entityversions.0 //@entities.3/@entityversions.1 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.2/@entityversions.4 //@entities.2/@entityversions.3" entities="ArtisticType Piece Exposing"/>
+  <schemaVersions root="//@entities.2/@entityversions.0"/>
+  <schemaVersions root="//@entities.2/@entityversions.5" entityVersions="//@entities.0/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.0" entities="ArtisticType"/>
+  <schemaVersions root="//@entities.4/@entityversions.1"/>
+  <schemaVersions root="//@entities.5/@entityversions.1" entityVersions="//@entities.2/@entityversions.2 //@entities.0/@entityversions.1 //@entities.2/@entityversions.1 //@entities.1/@entityversions.0 //@entities.3/@entityversions.0 //@entities.0/@entityversions.0 //@entities.3/@entityversions.1 //@entities.2/@entityversions.0 //@entities.2/@entityversions.5 //@entities.2/@entityversions.4 //@entities.2/@entityversions.3" entities="ArtisticType Piece Exposing"/>
+  <schemaVersions root="//@entities.2/@entityversions.3"/>
+  <entities name="ArtisticType">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="authorsNumber">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="popularity">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Style">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="period">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="featured_authors">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+        </type>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Piece">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="author">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="author">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="material">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="author">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="material">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="artisticType">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="4">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="author">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="material">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="artisticType">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="style">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="size">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+        </type>
+      </properties>
+    </entityversions>
+    <entityversions versionId="5">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="author">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="material">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="artisticType">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="size">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="hasStyle" lowerBound="1" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="6">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="author">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="material">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="size">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="hasStyle" lowerBound="1" upperBound="-1" refTo="//@entities.1/@entityversions.0"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasArtisticType" lowerBound="1" upperBound="1" refTo="ArtisticType"/>
+    </entityversions>
+  </entities>
+  <entities name="Exposing">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="date">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasPieces" lowerBound="1" upperBound="-1" refTo="Piece"/>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="date">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasPieces" lowerBound="1" upperBound="-1" refTo="Piece"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="isItinerant">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="boolean"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="isTemporary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="boolean"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="isPermanent">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="boolean"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Restorer">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="hours_per_week">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="salary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="salary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="tools">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+        </type>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Guide">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="showsExposings" upperBound="-1" refTo="Exposing"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="showsPieces" upperBound="-1" refTo="Piece"/>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="salary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="showsExposings" upperBound="-1" refTo="Exposing"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="showsPieces" upperBound="-1" refTo="Piece"/>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="salary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="languages">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="showsPieces" upperBound="-1" refTo="Piece"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="showsExposings" upperBound="-1" refTo="//@entities.3/@entityversions.1"/>
+    </entityversions>
+  </entities>
+  <entities name="Director">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="hours_per_week">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="salary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Museum">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="location">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasPieces" lowerBound="1" upperBound="-1" refTo="Piece"/>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="location">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="foundationYear">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasPieces" lowerBound="1" upperBound="-1" refTo="Piece"/>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="location">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="foundationYear">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasPieces" lowerBound="1" upperBound="-1" refTo="Piece"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="schedule">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:Tuple">
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+          </elements>
+          <elements xsi:type="Extended_NoSQL_Schema:Tuple">
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+          </elements>
+        </type>
+      </properties>
+    </entityversions>
+    <entityversions versionId="4">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="location">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="foundationYear">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasPieces" lowerBound="1" upperBound="-1" refTo="Piece"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="schedule">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:Tuple">
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+          </elements>
+          <elements xsi:type="Extended_NoSQL_Schema:Tuple">
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+            <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+          </elements>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="hasExposings" upperBound="-1" refTo="Exposing"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="hasDirector" lowerBound="1" upperBound="1" refTo="//@entities.6/@entityversions.0"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="hasGuides" upperBound="-1" refTo="//@entities.5/@entityversions.2"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="hasGuards" upperBound="-1" refTo="//@entities.8/@entityversions.0"/>
+    </entityversions>
+  </entities>
+  <entities name="Guard">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="string"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="hours_per_week">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="salary">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="float"/>
+      </properties>
+    </entityversions>
+  </entities>
+</Extended_NoSQL_Schema:NoSQLDataModel>

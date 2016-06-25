@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Extended_NoSQL_Schema:NoSQLDataModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Extended_NoSQL_Schema="http://www.modelum.es/extended_nosql_schema" name="Books">
+  <schemaVersions root="//@entities.0/@entityversions.0"/>
+  <schemaVersions root="//@entities.3/@entityversions.1"/>
+  <schemaVersions root="//@entities.2/@entityversions.0" entityVersions="//@entities.0/@entityversions.0 //@entities.4/@entityversions.0 //@entities.3/@entityversions.0 //@entities.5/@entityversions.0 //@entities.1/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.2 //@entities.0/@entityversions.1" entities="Publisher Journal"/>
+  <schemaVersions root="//@entities.1/@entityversions.1"/>
+  <schemaVersions root="//@entities.1/@entityversions.0"/>
+  <schemaVersions root="//@entities.0/@entityversions.2" entityVersions="//@entities.1/@entityversions.1 //@entities.1/@entityversions.0" entities="Journal"/>
+  <schemaVersions root="//@entities.2/@entityversions.1" entityVersions="//@entities.0/@entityversions.0 //@entities.4/@entityversions.0 //@entities.3/@entityversions.0 //@entities.1/@entityversions.1 //@entities.1/@entityversions.0 //@entities.0/@entityversions.2 //@entities.0/@entityversions.1" entities="Publisher Journal"/>
+  <schemaVersions root="//@entities.0/@entityversions.1"/>
+  <entities name="Publisher">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="city">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="3">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="journal" lowerBound="1" upperBound="-1" refTo="Journal"/>
+    </entityversions>
+  </entities>
+  <entities name="Journal">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="issn">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="discipline">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="issn">
+        <type xsi:type="Extended_NoSQL_Schema:Tuple">
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+          <elements xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+        </type>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="discipline">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="number">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Book">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="title">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="year">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="publisher" lowerBound="1" upperBound="1" refTo="Publisher"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="content" lowerBound="1" upperBound="1" refTo="//@entities.5/@entityversions.0"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="author" lowerBound="1" upperBound="-1" refTo="//@entities.3/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="title">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Reference" name="publisher" lowerBound="1" upperBound="1" refTo="Publisher"/>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="author" lowerBound="1" upperBound="1" refTo="//@entities.3/@entityversions.0"/>
+    </entityversions>
+  </entities>
+  <entities name="Author">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Aggregate" name="company" lowerBound="1" upperBound="1" refTo="//@entities.4/@entityversions.0"/>
+    </entityversions>
+    <entityversions versionId="2">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="company">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="country">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Company">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="name">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="country">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="String"/>
+      </properties>
+    </entityversions>
+  </entities>
+  <entities name="Content">
+    <entityversions versionId="1">
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="chapters">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+      <properties xsi:type="Extended_NoSQL_Schema:Attribute" name="pages">
+        <type xsi:type="Extended_NoSQL_Schema:PrimitiveType" name="int"/>
+      </properties>
+    </entityversions>
+  </entities>
+</Extended_NoSQL_Schema:NoSQLDataModel>

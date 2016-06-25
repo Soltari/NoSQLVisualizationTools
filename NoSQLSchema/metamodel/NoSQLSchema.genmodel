@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/NoSQLSchema/src" modelPluginID="NoSQLSchema" modelName="NoSQLSchema"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="7.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>NoSQLSchema.ecore</foreignModel>
+  <genPackages prefix="NoSQL_Schema" disposableProviderFactory="true" ecorePackage="NoSQLSchema.ecore#/">
+    <genClasses ecoreClass="NoSQLSchema.ecore#//NoSQLSchema">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//NoSQLSchema/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//NoSQLSchema/entities"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//Entity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//Entity/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//Entity/entityversions"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//EntityVersion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//EntityVersion/versionId"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//EntityVersion/properties"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="NoSQLSchema.ecore#//Property">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//Property/name"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//Attribute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="NoSQLSchema.ecore#//Type"/>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//Tuple">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//Tuple/elements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="NoSQLSchema.ecore#//Association">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//Association/lowerBound"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//Association/upperBound"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//Reference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//Reference/opposite"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//Reference/refTo"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//Aggregate">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NoSQLSchema.ecore#//Aggregate/refTo"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQLSchema.ecore#//PrimitiveType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQLSchema.ecore#//PrimitiveType/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
