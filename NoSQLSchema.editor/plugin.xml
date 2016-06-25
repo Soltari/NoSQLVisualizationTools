@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated NoSQLSchema -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="NoSQL_Schema.presentation.NoSQL_SchemaModelWizardID"
+            name="%_UI_NoSQL_SchemaModelWizard_label"
+            class="NoSQL_Schema.presentation.NoSQL_SchemaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NoSQL_SchemaModelFile.gif">
+         <description>%_UI_NoSQL_SchemaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated NoSQLSchema -->
+      <editor
+            id="NoSQL_Schema.presentation.NoSQL_SchemaEditorID"
+            name="%_UI_NoSQL_SchemaEditor_label"
+            icon="icons/full/obj16/NoSQL_SchemaModelFile.gif"
+            extensions="nosql_schema"
+            class="NoSQL_Schema.presentation.NoSQL_SchemaEditor"
+            contributorClass="NoSQL_Schema.presentation.NoSQL_SchemaActionBarContributor">
+      </editor>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated ExNoSQLSchema -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Extended_NoSQL_Schema.presentation.Extended_NoSQL_SchemaModelWizardID"
+            name="%_UI_Extended_NoSQL_SchemaModelWizard_label"
+            class="Extended_NoSQL_Schema.presentation.Extended_NoSQL_SchemaModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Extended_NoSQL_SchemaModelFile.gif">
+         <description>%_UI_Extended_NoSQL_SchemaModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated ExNoSQLSchema -->
+      <editor
+            id="Extended_NoSQL_Schema.presentation.Extended_NoSQL_SchemaEditorID"
+            name="%_UI_Extended_NoSQL_SchemaEditor_label"
+            icon="icons/full/obj16/Extended_NoSQL_SchemaModelFile.gif"
+            extensions="extended_nosql_schema"
+            class="Extended_NoSQL_Schema.presentation.Extended_NoSQL_SchemaEditor"
+            contributorClass="Extended_NoSQL_Schema.presentation.Extended_NoSQL_SchemaActionBarContributor">
+      </editor>
+   </extension>
+</plugin>
