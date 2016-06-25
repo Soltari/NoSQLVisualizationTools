@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="NoSQLSchema.FeatureProject"
+      label="FeatureProject"
+      version="1.1.4">
+
+   <description url="http://www.modelum.es/description">
+      NoSQLSchema plug-in for NoSQL schema visualization with Sirius.
+   </description>
+
+   <copyright url="http://www.modelum.es/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.modelum.es/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="NoSQLSchema"
+         download-size="0"
+         install-size="0"
+         version="1.1.4"
+         unpack="false"/>
+
+   <plugin
+         id="NoSQLSchema.edit"
+         download-size="0"
+         install-size="0"
+         version="1.1.4"
+         unpack="false"/>
+
+   <plugin
+         id="NoSQLSchema.editor"
+         download-size="0"
+         install-size="0"
+         version="1.1.4"
+         unpack="false"/>
+
+</feature>

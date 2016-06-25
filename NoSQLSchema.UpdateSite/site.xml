@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/NoSQLSchema.FeatureProject_1.1.4.jar" id="NoSQLSchema.FeatureProject" version="1.1.4">
+      <category name="NoSQLSchema metamodels"/>
+   </feature>
+   <feature url="features/NoSQLSchemaVisualizacion.FeatureProject_1.1.4.jar" id="NoSQLSchemaVisualizacion.FeatureProject" version="1.1.4">
+      <category name="NoSQLSchema Sirius workbench"/>
+   </feature>
+   <feature url="features/NoSQLDataVisualization.FeatureProject_1.1.0.jar" id="NoSQLDataVisualization.FeatureProject" version="1.1.0">
+      <category name="NoSQLData metamodels"/>
+   </feature>
+   <category-def name="NoSQLSchema metamodels" label="NoSQLSchema metamodels"/>
+   <category-def name="NoSQLSchema Sirius workbench" label="NoSQLSchema Sirius workbench"/>
+   <category-def name="NoSQLData metamodels" label="NoSQLData metamodels"/>
+</site>
