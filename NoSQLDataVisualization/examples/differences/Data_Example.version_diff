@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Version_Diff:NoSQLDifferences xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Version_Diff="http://www.modelum.es/version_diff" name="Tuples_example">
+  <hasTypeDifferences name="Entity_1_1">
+    <hints xsi:type="Version_Diff:HasField" withName="HomogeneousTuple">
+      <withType xsi:type="Version_Diff:HomogeneousTupleType" type="int"/>
+    </hints>
+    <hints xsi:type="Version_Diff:HasField" withName="type">
+      <withType xsi:type="Version_Diff:EntityType" type="Entity_1"/>
+    </hints>
+  </hasTypeDifferences>
+</Version_Diff:NoSQLDifferences>

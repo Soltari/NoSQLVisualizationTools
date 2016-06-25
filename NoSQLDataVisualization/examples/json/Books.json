@@ -1,0 +1,731 @@
+[
+  {
+    "_id": 1,
+    "type": "Publisher",
+    "name": "value_126",
+    "city": "value_108"
+  },
+  {
+    "_id": 2,
+    "type": "Publisher",
+    "name": "value_131",
+    "city": "value_145"
+  },
+  {
+    "_id": 3,
+    "type": "Publisher",
+    "name": "value_132",
+    "city": "value_73"
+  },
+  {
+    "_id": 4,
+    "type": "Publisher",
+    "name": "value_169",
+    "city": "value_69"
+  },
+  {
+    "_id": 5,
+    "type": "Publisher",
+    "name": "value_21"
+  },
+  {
+    "_id": 6,
+    "type": "Publisher",
+    "name": "value_128"
+  },
+  {
+    "_id": 7,
+    "type": "Publisher",
+    "name": "value_15"
+  },
+  {
+    "_id": 8,
+    "type": "Publisher",
+    "name": "value_139",
+    "journal": [
+      "162",
+      "162",
+      "196"
+    ]
+  },
+  {
+    "_id": 9,
+    "type": "Publisher",
+    "name": "value_46",
+    "journal": [
+      "14"
+    ]
+  },
+  {
+    "_id": 10,
+    "type": "Publisher",
+    "name": "value_176",
+    "journal": [
+      "98"
+    ]
+  },
+  {
+    "_id": 11,
+    "type": "Publisher",
+    "name": "value_141",
+    "journal": [
+      "67"
+    ]
+  },
+  {
+    "_id": 12,
+    "type": "Publisher",
+    "name": "value_88",
+    "journal": [
+      "140"
+    ]
+  },
+  {
+    "_id": 13,
+    "type": "Journal",
+    "issn": [
+      "value_163",
+      "value_52"
+    ],
+    "name": "value_120",
+    "discipline": "value_86"
+  },
+  {
+    "_id": 14,
+    "type": "Journal",
+    "issn": [
+      "value_159",
+      "value_103"
+    ],
+    "name": "value_94",
+    "discipline": "value_85"
+  },
+  {
+    "_id": 15,
+    "type": "Journal",
+    "issn": [
+      "value_47",
+      "value_56"
+    ],
+    "name": "value_62",
+    "discipline": "value_23"
+  },
+  {
+    "_id": 16,
+    "type": "Journal",
+    "issn": [
+      "value_174",
+      "value_151"
+    ],
+    "name": "value_26",
+    "discipline": "value_78"
+  },
+  {
+    "_id": 17,
+    "type": "Journal",
+    "issn": [
+      "value_27",
+      "value_59"
+    ],
+    "name": "value_47",
+    "discipline": "value_94"
+  },
+  {
+    "_id": 18,
+    "type": "Journal",
+    "issn": [
+      "value_170",
+      "value_45"
+    ],
+    "name": "value_114",
+    "discipline": "value_78",
+    "number": 42
+  },
+  {
+    "_id": 19,
+    "type": "Journal",
+    "issn": [
+      "value_125",
+      "value_128"
+    ],
+    "name": "value_42",
+    "discipline": "value_11",
+    "number": 16
+  },
+  {
+    "_id": 20,
+    "type": "Journal",
+    "issn": [
+      "value_77",
+      "value_172"
+    ],
+    "name": "value_183",
+    "discipline": "value_27",
+    "number": 96
+  },
+  {
+    "_id": 21,
+    "type": "Journal",
+    "issn": [
+      "value_47",
+      "value_158"
+    ],
+    "name": "value_112",
+    "discipline": "value_152",
+    "number": 52
+  },
+  {
+    "_id": 22,
+    "type": "Book",
+    "title": "value_121",
+    "year": 198,
+    "publisher": "156",
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 23,
+    "type": "Book",
+    "title": "value_150",
+    "year": 187,
+    "publisher": "168",
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 24,
+    "type": "Book",
+    "title": "value_186",
+    "year": 82,
+    "publisher": [
+      "88"
+    ],
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 25,
+    "type": "Book",
+    "title": "value_45",
+    "year": 152,
+    "publisher": [
+      "154"
+    ],
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 26,
+    "type": "Book",
+    "title": "value_51",
+    "year": 90,
+    "publisher": [
+      "86"
+    ],
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 27,
+    "type": "Book",
+    "title": "value_125",
+    "year": 0,
+    "publisher": "155",
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 28,
+    "type": "Book",
+    "title": "value_98",
+    "year": 143,
+    "publisher": "147",
+    "content": [
+      {
+        "_id": 53,
+        "type": "Content",
+        "chapters": 26,
+        "pages": 8
+      }
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 29,
+    "type": "Book",
+    "title": "value_126",
+    "publisher": [
+      "76"
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 30,
+    "type": "Book",
+    "title": "value_186",
+    "publisher": "149",
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 31,
+    "type": "Book",
+    "title": "value_29",
+    "publisher": [
+      "33"
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 32,
+    "type": "Book",
+    "title": "value_132",
+    "publisher": "40",
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 33,
+    "type": "Book",
+    "title": "value_123",
+    "publisher": "174",
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 34,
+    "type": "Book",
+    "title": "value_95",
+    "publisher": [
+      "142"
+    ],
+    "author": [
+      {
+        "_id": 35,
+        "type": "Author",
+        "name": "value_90",
+        "company": [
+          {
+            "_id": 49,
+            "type": "Company",
+            "name": "value_90",
+            "country": "value_111"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 35,
+    "type": "Author",
+    "name": "value_90",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 36,
+    "type": "Author",
+    "name": "value_194",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 37,
+    "type": "Author",
+    "name": "value_52",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 38,
+    "type": "Author",
+    "name": "value_39",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 39,
+    "type": "Author",
+    "name": "value_116",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 40,
+    "type": "Author",
+    "name": "value_150",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 41,
+    "type": "Author",
+    "name": "value_22",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 42,
+    "type": "Author",
+    "name": "value_85",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 43,
+    "type": "Author",
+    "name": "value_37",
+    "company": [
+      {
+        "_id": 49,
+        "type": "Company",
+        "name": "value_90",
+        "country": "value_111"
+      }
+    ]
+  },
+  {
+    "_id": 44,
+    "type": "Author",
+    "name": "value_197",
+    "company": "value_8",
+    "country": "value_38"
+  },
+  {
+    "_id": 45,
+    "type": "Author",
+    "name": "value_144",
+    "company": "value_108",
+    "country": "value_197"
+  },
+  {
+    "_id": 46,
+    "type": "Author",
+    "name": "value_148",
+    "company": "value_43",
+    "country": "value_110"
+  },
+  {
+    "_id": 47,
+    "type": "Author",
+    "name": "value_110",
+    "company": "value_137",
+    "country": "value_198"
+  },
+  {
+    "_id": 48,
+    "type": "Author",
+    "name": "value_70",
+    "company": "value_5",
+    "country": "value_189"
+  },
+  {
+    "_id": 49,
+    "type": "Company",
+    "name": "value_90",
+    "country": "value_111"
+  },
+  {
+    "_id": 50,
+    "type": "Company",
+    "name": "value_112",
+    "country": "value_177"
+  },
+  {
+    "_id": 51,
+    "type": "Company",
+    "name": "value_179",
+    "country": "value_148"
+  },
+  {
+    "_id": 52,
+    "type": "Company",
+    "name": "value_31",
+    "country": "value_28"
+  },
+  {
+    "_id": 53,
+    "type": "Content",
+    "chapters": 26,
+    "pages": 8
+  },
+  {
+    "_id": 54,
+    "type": "Content",
+    "chapters": 137,
+    "pages": 83
+  },
+  {
+    "_id": 55,
+    "type": "Content",
+    "chapters": 44,
+    "pages": 161
+  },
+  {
+    "_id": 56,
+    "type": "Content",
+    "chapters": 158,
+    "pages": 7
+  },
+  {
+    "_id": 57,
+    "type": "Content",
+    "chapters": 34,
+    "pages": 183
+  }
+]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="NoSQLDataVisualization.FeatureProject"
+      label="FeatureProject"
+      version="1.1.0">
+
+   <description url="http://www.modelum.es/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.modelum.es/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.modelum.es/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="NoSQLDataVisualization"
+         download-size="0"
+         install-size="0"
+         version="1.1.0"
+         unpack="false"/>
+
+   <plugin
+         id="NoSQLDataVisualization.edit"
+         download-size="0"
+         install-size="0"
+         version="1.1.0"
+         unpack="false"/>
+
+   <plugin
+         id="NoSQLDataVisualization.editor"
+         download-size="0"
+         install-size="0"
+         version="1.1.0"
+         unpack="false"/>
+
+</feature>

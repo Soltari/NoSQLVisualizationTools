@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated NoSQLDataDifferences -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="Version_Diff.presentation.Version_DiffModelWizardID"
+            name="%_UI_Version_DiffModelWizard_label"
+            class="Version_Diff.presentation.Version_DiffModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Version_DiffModelFile.gif">
+         <description>%_UI_Version_DiffModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated NoSQLDataDifferences -->
+      <editor
+            id="Version_Diff.presentation.Version_DiffEditorID"
+            name="%_UI_Version_DiffEditor_label"
+            icon="icons/full/obj16/Version_DiffModelFile.gif"
+            extensions="version_diff"
+            class="Version_Diff.presentation.Version_DiffEditor"
+            contributorClass="Version_Diff.presentation.Version_DiffActionBarContributor">
+      </editor>
+   </extension>
+</plugin>

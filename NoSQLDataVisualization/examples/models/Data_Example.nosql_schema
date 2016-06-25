@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NoSQL_Schema:NoSQLSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:NoSQL_Schema="http://www.modelum.es/nosql_schema" name="Tuples_example">
+  <entities name="Entity_1">
+    <entityversions versionId="1">
+      <properties xsi:type="NoSQL_Schema:Attribute" name="HomogeneousTuple">
+        <type xsi:type="NoSQL_Schema:Tuple">
+          <elements xsi:type="NoSQL_Schema:PrimitiveType" name="int"/>
+        </type>
+      </properties>
+    </entityversions>
+  </entities>
+</NoSQL_Schema:NoSQLSchema>
