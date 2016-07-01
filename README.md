@@ -26,4 +26,21 @@ The projects involved in this visualization tool are the following:
 
 # Data visualization
 
+This second visualization tool is used to draw different graphics representing the data classification of a NoSQL database. Every database has a way of exporting its data as a JSON object collection. The only requirement for this process is (i) to define a NoSQL\_Schema model for the database involved and (b) making sure each object of the JSON input file has a defined id field of some kind as well as a "type" attribute indicating its type (the entity it belongs to).
+
+The NoSQL\_Schema model will then be transformed by a m2m transformation into a Version\_Diff model which defines, for each version entity (each JSON object) a collection of HasField and HasNotField defining how the version is composed, by which properties and with which types. Now a m2t transformation can be executed which in the end will generate JavaScript.
+
+Once the m2t transformation is finished a HTML5/JS project is created with an index.html. Giving a proper JSON object collection file it is possible to classify this collection into its entities and versions and represent the results with D3.js graphics.
+
+The projects involved in this visualization tool are the following:
+
+* NoSQLDataVisualization: Project with the Version\_Diff metamodel definition. It also contains all the m2m and m2t transformations, and references the NoSQLSchema project.
+* NoSQLDataVisualization.edit and NoSQLDataVisualization.editor: Projects used by the modeling infrastructure to generate an Eclipse model editor.
+* NoSQLDataVisualization.FeatureProject: The feature project in which the Version\_Diff metamodel is contained.
+
+Also in the NoSQLDataIndex project several examples can be found. Each example is contained in a folder with the JavaScript code already generated. To start each example, just open the index.html file in a web browser.
+
+Images and videos coming soon(TM)
+
+Cheers!
 
