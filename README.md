@@ -6,7 +6,6 @@ These projects are divided into two visualization tools with different purposes:
 
 <figure>
 	<img src="figures/schemaprocess.png" alt="schemaprocess" align="center">
-	<figcaption text-align="center">Fig1. - Schema visualization process</figcaption>
 </figure>
 <br/>
 
@@ -14,7 +13,6 @@ The first tool is designed to represent schemas and schema versions in a friendl
 
 <figure>
 	<img src="figures/nosqlschema.png" alt="nosqlschema" align="center">
-	<figcaption text-align="center">Fig2. - NoSQLSchema metamodel</figcaption>
 </figure>
 <br/>
 
@@ -22,7 +20,6 @@ This NoSQL\_Schema model is then transformed by a m2m transformation into an Ext
 
 <figure>
 	<img src="figures/enosqlschema.png" alt="enosqlschema" align="center">
-	<figcaption text-align="center">Fig3. - Extended NoSQLSchema metamodel</figcaption>
 </figure>
 <br/>
 
@@ -32,7 +29,6 @@ Once an Extended\_NoSQL\_Schema model is generated the Sirius workbench can be u
 
 <figure>
 	<img src="figures/treeentityview.png" alt="treeentityview" align="center">
-	<figcaption text-align="center">Fig4. - Tree entity view</figcaption>
 </figure>
 <br/>
 
@@ -40,7 +36,6 @@ Once an Extended\_NoSQL\_Schema model is generated the Sirius workbench can be u
 
 <figure>
 	<img src="figures/globalview.png" alt="globalview" align="center">
-	<figcaption text-align="center">Fig5. - Global view</figcaption>
 </figure>
 <br/>
 
@@ -48,7 +43,6 @@ Once an Extended\_NoSQL\_Schema model is generated the Sirius workbench can be u
 
 <figure>
 	<img src="figures/schema2view.png" alt="schema2view" align="center">
-	<figcaption text-align="center">Fig6. - Schema view</figcaption>
 </figure>
 <br/>
 
@@ -65,21 +59,36 @@ The projects involved in this visualization tool are the following:
 
 # Data visualization
 
-![dataprocess](figures/dataprocess.png)
+<figure>
+	<img src="figures/dataprocess.png" alt="dataprocess" align="center">
+</figure>
+<br/>
 
 This second visualization tool is used to draw different graphics representing the data classification of a NoSQL database. Every database has a way of exporting its data as a JSON object collection. The only requirement for this process is (i) to define a NoSQL\_Schema model for the database involved and (b) making sure each object of the JSON input file has a defined id field of some kind as well as a "type" attribute indicating its type (the entity it belongs to).
 
-![versiondiff](figures/versiondiff.png)
+<figure>
+	<img src="figures/versiondiff.png" alt="versiondiff" align="center">
+</figure>
+<br/>
 
 The NoSQL\_Schema model will then be transformed by a m2m transformation into a Version\_Diff model which defines, for each version entity (each JSON object) a collection of HasField and HasNotField defining how the version is composed, by which properties and with which types. Now a m2t transformation can be executed which in the end will generate JavaScript.
 
-![versiondiffexample](figures/versiondiffexample.png)
+<figure>
+	<img src="figures/versiondiffexample.png" alt="versiondiffexample" align="center">
+</figure>
+<br/>
 
 Once the m2t transformation is finished a HTML5/JS project is created with an index.html. Giving a proper JSON object collection file it is possible to classify this collection into its entities and versions and represent the results with D3.js graphics.
 
-![d3donuts](figures/d3donuts.png)
+<figure>
+	<img src="figures/d3donuts.png" alt="d3donuts" align="center">
+</figure>
+<br/>
 
-![d3tree](figures/d3tree.png)
+<figure>
+	<img src="figures/d3tree.png" alt="d3tree" align="center">
+</figure>
+<br/>
 
 The projects involved in this visualization tool are the following:
 
