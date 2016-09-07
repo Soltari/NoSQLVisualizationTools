@@ -4,7 +4,10 @@ These projects are divided into two visualization tools with different purposes:
 
 # Schema visualization
 
-![schemaprocess](figures/schemaprocess.png)
+<figure>
+	<img src="figures/schemaprocess.png" alt="schemaprocess">
+	<figcaption>Fig1. - Starting NoSQLSchema metamodel</figcaption>
+</figure> 
 
 The first tool is designed to represent schemas and schema versions in a friendly way using Sirius (https://eclipse.org/sirius/). Sirius is a modeling tool used to generate graphical DSLs in an easy way, but also to define a suitable representation for a given model. A NoSQL schema is a schema used to define which data and in which format is being stored in a NoSQL database. This schema is not explicitly defined but inferred by a data-oriented infererence process. As a result of this inference progress a NoSQL\_Schema model is given, and this model is the input for the visualization process.
 
