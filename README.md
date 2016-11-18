@@ -1,6 +1,9 @@
 **-* NoSQLVisualizationTools is a M.Sc.Thesis on New Technologies in Computer Science from the University of Murcia. It provides a serie of projects for NoSQL Data and Schema visualization *-** 
 
-These projects are divided into two visualization tools with different purposes: Schema visualization and Data visualization on NoSQL databases.
+These projects are divided into two visualization tools with different purposes: Schema visualization and Data visualization on NoSQL databases. There is also a 'Documents' folder in which the following content is stored:
+
+* This project's Master Thesis PDF and slides, in spanish.
+* 2016 SiriusCon abstract and slides used in the talk, in english.
 
 # Schema visualization
 
