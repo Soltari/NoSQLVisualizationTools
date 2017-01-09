@@ -1,4 +1,4 @@
-**If you are looking for the newest versions of all of the NoSQL engineering projects (the base model, the inference process and way more), please refer to our official GitHub repository in https://github.com/catedrasaes-umu/NoSQLDataEngineering**
+**If you are looking for the newest versions of all of the NoSQL engineering projects (the base model, the inference process, the visualization tools...), please refer to our official GitHub repository in https://github.com/catedrasaes-umu/NoSQLDataEngineering**
 
 **-* NoSQLVisualizationTools is a M.Sc.Thesis on New Technologies in Computer Science from the University of Murcia. It provides a serie of projects for NoSQL Data and Schema visualization *-** 
 
