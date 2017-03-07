@@ -14,6 +14,10 @@ These projects are divided into two visualization tools with different purposes:
 </figure>
 <br/>
 
+<a href="https://www.youtube.com/watch?v=mz474apDR2I"><img src="https://img.youtube.com/vi/mz474apDR2I/maxresdefault.jpg" width="250"></a>
+
+https://www.youtube.com/watch?v=mz474apDR2I
+
 The first tool is designed to represent schemas and schema versions in a friendly way using Sirius (https://eclipse.org/sirius/). Sirius is a modeling tool used to generate graphical DSLs in an easy way, but also to define a suitable representation for a given model. A NoSQL schema is a schema used to define which data and in which format is being stored in a NoSQL database. This schema is not explicitly defined but inferred by a data-oriented infererence process. As a result of this inference progress a NoSQL\_Schema model is given, and this model is the input for the visualization process.
 
 <figure>
@@ -68,6 +72,10 @@ The projects involved in this visualization tool are the following:
 	<img src="figures/dataprocess.png" alt="dataprocess" align="center">
 </figure>
 <br/>
+
+<a href="https://www.youtube.com/watch?v=933V5AiwAgM"><img src="https://img.youtube.com/vi/933V5AiwAgM/maxresdefault.jpg" width="250"></a>
+
+https://www.youtube.com/watch?v=933V5AiwAgM
 
 This second visualization tool is used to draw different graphics representing the data classification of a NoSQL database. Every database has a way of exporting its data as a JSON object collection. The only requirement for this process is (i) to define a NoSQL\_Schema model for the database involved and (b) making sure each object of the JSON input file has a defined id field of some kind as well as a "type" attribute indicating its type (the entity it belongs to).
 
